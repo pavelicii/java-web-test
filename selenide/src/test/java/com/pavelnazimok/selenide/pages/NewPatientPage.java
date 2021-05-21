@@ -7,7 +7,6 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selenide.$;
 import static com.pavelnazimok.selenide.utils.SelenideExtensions.setChecked;
 
-@SuppressWarnings("UnusedReturnValue")
 public class NewPatientPage {
 
     private final PatientsMenuSection patientsMenu = new PatientsMenuSection();

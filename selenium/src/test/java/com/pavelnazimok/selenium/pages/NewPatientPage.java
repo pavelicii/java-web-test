@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-@SuppressWarnings("UnusedReturnValue")
 public class NewPatientPage extends BasePage {
 
     public NewPatientPage(final WebDriver driver) {

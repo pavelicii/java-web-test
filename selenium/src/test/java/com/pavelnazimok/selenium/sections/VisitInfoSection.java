@@ -8,7 +8,7 @@ public class VisitInfoSection<T> extends BaseSection<T> {
 
     public VisitInfoSection(final WebDriver driver, final T pageType) {
         super(driver, pageType);
-        changeReasonPopup = new ChangeReasonSection<>(driver, T);
+        changeReasonPopup = new ChangeReasonSection<>(driver, this.pageType);
     }
 
     private final ChangeReasonSection<T> changeReasonPopup;
@@ -47,18 +47,18 @@ public class VisitInfoSection<T> extends BaseSection<T> {
     public T clickEdit() {
         editButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickSave() {
         saveButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickCancelEdit() {
         cancelEditButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 }

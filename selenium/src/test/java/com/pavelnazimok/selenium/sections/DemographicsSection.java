@@ -9,7 +9,7 @@ public class DemographicsSection<T> extends BaseSection<T> {
 
     public DemographicsSection(final WebDriver driver, final T pageType) {
         super(driver, pageType);
-        changeReasonPopup = new ChangeReasonSection<>(driver, T);
+        changeReasonPopup = new ChangeReasonSection<>(driver, this.pageType);
     }
 
     private final ChangeReasonSection<T> changeReasonPopup;
@@ -58,19 +58,19 @@ public class DemographicsSection<T> extends BaseSection<T> {
     public T clickEdit() {
         editButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickSave() {
         saveButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickCancelEdit() {
         cancelEditButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T selectSex(final String sex) {
@@ -78,6 +78,6 @@ public class DemographicsSection<T> extends BaseSection<T> {
         waitUntilElementIsClickable(
                 driver.findElement(By.xpath(String.format("//td[@id='Sex_CC']//td[text() = '%s']", sex)))
         ).click();
-        return T;
+        return pageType;
     }
 }

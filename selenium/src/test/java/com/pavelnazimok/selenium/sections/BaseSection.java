@@ -5,11 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 public abstract class BaseSection<T> extends BasePage {
 
-    @SuppressWarnings("checkstyle:MemberName")
-    protected T T;
+    protected T pageType;
 
     public BaseSection(final WebDriver driver, final T pageType) {
         super(driver);
-        this.T = pageType;
+        this.pageType = pageType;
     }
 }

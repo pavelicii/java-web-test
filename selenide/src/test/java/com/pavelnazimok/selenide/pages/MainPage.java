@@ -8,7 +8,6 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selenide.$;
 import static com.pavelnazimok.selenide.utils.SelenideExtensions.javaScriptClick;
 
-@SuppressWarnings("UnusedReturnValue")
 public class MainPage {
 
     private final HeaderSection header = new HeaderSection();

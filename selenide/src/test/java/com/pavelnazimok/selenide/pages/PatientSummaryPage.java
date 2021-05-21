@@ -8,7 +8,6 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.$;
 
-@SuppressWarnings("UnusedReturnValue")
 public class PatientSummaryPage {
 
     private final PatientsMenuSection patientsMenu = new PatientsMenuSection();

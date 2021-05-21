@@ -15,7 +15,6 @@ import java.util.regex.Pattern;
 import static com.pavelnazimok.selenium.tests.BaseTest.TIMEOUT_IMPLICIT_WAIT;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SuppressWarnings("UnusedReturnValue")
 public class QueriesPage extends BasePage {
 
     public static final Pattern PATTERN_QUERY_COUNTER = Pattern.compile("(\\d) total queries, (\\d) open");

@@ -5,7 +5,6 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$;
 
-@SuppressWarnings("UnusedReturnValue")
 public class ChangeReasonSection {
 
     private final SelenideElement self = $("[id*='pcChangeNotification'] .dxpc-mainDiv");

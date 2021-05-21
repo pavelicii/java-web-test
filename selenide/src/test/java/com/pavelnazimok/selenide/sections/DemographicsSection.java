@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 
-@SuppressWarnings("UnusedReturnValue")
 public class DemographicsSection {
 
     private final ChangeReasonSection changeReasonPopup = new ChangeReasonSection();

@@ -14,7 +14,7 @@ public class HappinessSection<T> extends BaseSection<T> {
 
     public HappinessSection(final WebDriver driver, final T pageType) {
         super(driver, pageType);
-        changeReasonPopup = new ChangeReasonSection<>(driver, T);
+        changeReasonPopup = new ChangeReasonSection<>(driver, this.pageType);
     }
 
     private final ChangeReasonSection<T> changeReasonPopup;
@@ -63,19 +63,19 @@ public class HappinessSection<T> extends BaseSection<T> {
     public T clickEdit() {
         editButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickSave() {
         saveButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickCancelEdit() {
         cancelEditButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T moveSliderToPosition(final int position) {
@@ -87,31 +87,31 @@ public class HappinessSection<T> extends BaseSection<T> {
 
         actions().dragAndDropBy(sliderThumb, levelOffset * (position - 1), 0).perform();
 
-        return T;
+        return pageType;
     }
 
     public T setTotallyUnhappy() {
         totallyHappyLabel.click();
-        return T;
+        return pageType;
     }
 
     public T setUnhappy() {
         unhappyLabel.click();
-        return T;
+        return pageType;
     }
 
     public T setHappy() {
         happyLabel.click();
-        return T;
+        return pageType;
     }
 
     public T setPrettyHappy() {
         prettyHappyLabel.click();
-        return T;
+        return pageType;
     }
 
     public T setTotallyHappy() {
         totallyHappyLabel.click();
-        return T;
+        return pageType;
     }
 }

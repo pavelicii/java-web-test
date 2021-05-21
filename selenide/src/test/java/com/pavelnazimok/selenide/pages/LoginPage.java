@@ -6,7 +6,6 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$;
 
-@SuppressWarnings("UnusedReturnValue")
 public class LoginPage {
 
     @SuppressWarnings("checkstyle:EmptyLineSeparator")

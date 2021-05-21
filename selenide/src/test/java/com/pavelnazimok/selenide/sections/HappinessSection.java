@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.actions;
 import static com.codeborne.selenide.Selenide.sleep;
 
-@SuppressWarnings("UnusedReturnValue")
 public class HappinessSection {
 
     private final ChangeReasonSection changeReasonPopup = new ChangeReasonSection();

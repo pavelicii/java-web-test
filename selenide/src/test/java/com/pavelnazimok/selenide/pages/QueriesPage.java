@@ -15,7 +15,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$x;
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SuppressWarnings("UnusedReturnValue")
 public class QueriesPage {
 
     public static final Pattern PATTERN_QUERY_COUNTER = Pattern.compile("(\\d) total queries, (\\d) open");

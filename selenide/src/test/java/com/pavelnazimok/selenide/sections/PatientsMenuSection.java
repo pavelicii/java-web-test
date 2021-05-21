@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 import static com.pavelnazimok.selenide.utils.SelenideExtensions.javaScriptClick;
 
-@SuppressWarnings("UnusedReturnValue")
 public class PatientsMenuSection {
 
     private final SelenideElement self = $("#patientNavigation");

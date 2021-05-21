@@ -29,12 +29,12 @@ public class PatientsMenuSection<T> extends BaseSection<T> {
 
     public T clickActiveTab() {
         waitUntilElementIsClickable(activeTab).click();
-        return T;
+        return pageType;
     }
 
     public T clickInactiveTab() {
         waitUntilElementIsClickable(inactiveTab).click();
-        return T;
+        return pageType;
     }
 
     public PatientSummaryPage clickPatient(final String patient) {

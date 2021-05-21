@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-@SuppressWarnings("UnusedReturnValue")
 public class ChangeReasonSection<T> extends BaseSection<T> {
 
     public ChangeReasonSection(final WebDriver driver, final T pageType) {
@@ -22,18 +21,18 @@ public class ChangeReasonSection<T> extends BaseSection<T> {
 
     public T typeChangeReason(final String reason) {
         changeReasonTextBox.sendKeys(reason);
-        return T;
+        return pageType;
     }
 
     public T clickSaveButton() {
         saveButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 
     public T clickCancelButton() {
         cancelButton.click();
         waitUntilLoadingIndicatorDisappears();
-        return T;
+        return pageType;
     }
 }

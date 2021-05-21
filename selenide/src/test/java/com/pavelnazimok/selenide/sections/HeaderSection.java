@@ -7,7 +7,6 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 
-@SuppressWarnings("UnusedReturnValue")
 public class HeaderSection {
 
     private final SelenideElement self = $("#headerContent");
